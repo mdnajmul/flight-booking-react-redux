@@ -1,6 +1,8 @@
-import frames from '../public/img//icons/Frame';
-import logo from '../public/img/lws-logo';
-import '../public/styles';
+import './assets/css/styles.css';
+import frames from './assets/images/icons/Frame.svg';
+import vector1 from './assets/images/icons/Vector (1).svg';
+import vector3 from './assets/images/icons/Vector (3).svg';
+import logo from './assets/images/lws-logo.svg';
 
 function App() {
   return (
@@ -40,7 +42,7 @@ function App() {
           <div class="des-from">
             <p>Destination To</p>
             <div class="flex flex-row">
-              <img src="./img/icons/Frame.svg" alt="" />
+              <img src={frames} alt="" />
               <select class="outline-none px-2 py-2 w-full" name="to" id="lws-to" required>
                 <option value="" hidden>Please Select</option>
                 <option>Dhaka</option>
@@ -61,7 +63,7 @@ function App() {
           <div class="des-from">
             <p>Guests</p>
             <div class="flex flex-row">
-              <img src="./img/icons/Vector (1).svg" alt="" />
+              <img src={vector1} alt="" />
               <select class="outline-none px-2 py-2 w-full" name="guests" id="lws-guests" required>
                 <option value="" hidden>Please Select</option>
                 <option value="1">1 Person</option>
@@ -76,7 +78,7 @@ function App() {
           <div class="des-from !border-r-0">
             <p>Class</p>
             <div class="flex flex-row">
-              <img src="./img/icons/Vector (3).svg" alt="" />
+              <img src={vector3} alt="" />
               <select class="outline-none px-2 py-2 w-full" name="ticketClass" id="lws-ticketClass" required>
                 <option value="" hidden>Please Select</option>
                 <option>Business</option>
